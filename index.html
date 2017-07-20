@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="hideDiv()">
+
+<h1 class="center"> Employee CRUD Operations</h1>
+
+<div class="center">
+	<button class="button" onclick="showDiv()">Add Employee</button>
+	<button class="button" onclick="readEmployee()">Read Employee</button>
+	<button class="button" onclick="updateEmployee()">Update Employee</button>
+	<button class="button" onclick="deleteEmployee()">Delete Employee</button>
+
+	
+</div>
+
+<div id="addEmp" class="result" >
+
+<pre><span class="bold">Enter Employee Details </span> <br>
+Employee Name: <input type="text" name="empName"> <br>
+Employee ID: <input type="text" name="empId"> <br>
+City <input type="text" name="empCity"> <br> </pre>
+<button class="button" onclick="addEmployee()">Submit</button>
+<button class="button" onclick="clearEmpDetails()">Clear</button>
+
+
+</div>
+</body>
+</html>
